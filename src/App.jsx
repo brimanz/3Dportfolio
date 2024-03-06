@@ -1,8 +1,16 @@
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+
+
 const App = () => {
 	return(
-		<h1 className="text-3xl font-bold underline">
-      		Hello world!
-    	</h1>
+		<main className="bg-slate-300-20">
+			<Router>
+				Navbar
+				<Routes>
+					<Route path="/" element={"Home"}/>
+				</Routes>
+			</Router>
+		</main>
 	)
 }
 
